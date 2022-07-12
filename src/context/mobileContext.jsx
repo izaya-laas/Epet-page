@@ -6,17 +6,19 @@ const mobileContext = createContext();
 const initialValue = false;
 
 const MobileProvider = ({ children }) => {
-	const [isMobile, setIsMobile] = useState(initialValue);
+  const [isMobile, setIsMobile] = useState(initialValue);
 
-	let { width } = useScreenSize();
+  let { width } = useScreenSize();
 
-	useEffect(() => {
-		setIsMobile(width < 1024);
-	}, [width]);
+  useEffect(() => {
+    setIsMobile(width < 800);
+  }, [width]);
 
-	const data = [isMobile];
+  const data = [isMobile];
 
-	return <mobileContext.Provider value={data}>{children}</mobileContext.Provider>;
+  return (
+    <mobileContext.Provider value={data}>{children}</mobileContext.Provider>
+  );
 };
 
 export { MobileProvider };
