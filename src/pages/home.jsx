@@ -10,11 +10,11 @@ import introductionImage from "../epet-image.jpg";
 const Home = () => {
   return (
     <>
-      <div className="home-background bg-cover bg-center h-80">
-        <div className="from-transparent to-[#0f172a] bg-gradient-to-b h-80">
+      <div className="home-background bg-cover bg-center h-80 desktop:h-96">
+        <div className="from-transparent to-[#0f172a] bg-gradient-to-b h-80 desktop:h-96">
           <div className="h-full opacity-95 p-2 rounded-2xl">
             <Title className=" text-white flex justify-center items-center h-full text-center">
-              Una <br /> secundaria <br />
+              Una <br /> Secundaria <br />
               Excepcional
             </Title>
           </div>
@@ -23,7 +23,7 @@ const Home = () => {
       <div className="h-20 from-[#0f172a] bg-gradient-to-b to-[#232833]"></div>
       <main className="text-center px-4 mx-auto desktop:w-5/6">
         <Paragraph className="text-white mb-4">
-          Somos una excuela tecnica que reside en Realicó, La Pampa. calle San
+          Somos una escuela tecnica que reside en Realicó, La Pampa. calle San
           lorenzo - 1330. formamos mas de 20 tecnicos en equipos e instalaciones
           electromecanicas por año.
         </Paragraph>

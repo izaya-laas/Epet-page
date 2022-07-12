@@ -1,6 +1,5 @@
-import logo from "./components/Logo";
 import Header from "./components/header/Header";
-import darkContext, { DarkProvider } from "./context/darkContext";
+import { DarkProvider } from "./context/darkContext";
 import { MobileProvider } from "./context/mobileContext";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -10,10 +9,6 @@ import Error404 from "./pages/Error-404";
 import Home from "./pages/home";
 import Courses from "./pages/courses";
 import Entrants from "./pages/entrants";
-import { useContext } from "react";
-import IntroductionImage from "./components/IntroductionImage";
-import image from "./epet-image.jpg";
-import Footer from "./components/footer/Footer";
 
 function App() {
   // const [dark, setDark] = useContext(darkContext);
@@ -33,7 +28,6 @@ function App() {
           </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>
-        <Footer />
       </DarkProvider>
     </MobileProvider>
   );
