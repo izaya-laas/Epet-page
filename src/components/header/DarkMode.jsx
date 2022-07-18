@@ -6,10 +6,10 @@ import darkContext from "../../context/darkContext";
 
 const DarkMode = () => {
   const [positionRight, setPositionRight] = useState(true);
-  const [dark, setDark] = useContext(darkContext);
+  const { dark, handleTheme } = useContext(darkContext);
 
   const handlePosition = () => {
-    setDark(!dark);
+    handleTheme();
     setPositionRight(!positionRight);
   };
 

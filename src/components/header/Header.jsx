@@ -8,7 +8,7 @@ import darkContext from "../../context/darkContext";
 
 const Header = () => {
   let [isMobile] = useContext(mobileContext);
-  let [dark] = useContext(darkContext);
+  let { dark } = useContext(darkContext);
 
   return (
     <header
