@@ -20,18 +20,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="h-20 from-[#0f172a] bg-gradient-to-b to-[#232833]"></div>
+      <div className="h-20 from-[#0f172a] bg-gradient-to-b to-[#1f232b]"></div>
       <main className="text-center px-4 mx-auto desktop:w-5/6">
         <Paragraph className="text-white mb-4">
           Somos una escuela tecnica que reside en Realicó, La Pampa. calle San
           lorenzo - 1330. formamos mas de 20 tecnicos en equipos e instalaciones
           electromecanicas por año.
         </Paragraph>
-        <div>
+        <div className=" desktop:flex desktop:gap-8 desktop:justify-center ">
           <Button>
             <Link to="/ingresantes">¿Estas buscando inscribirte?</Link>
           </Button>
-          <Button className="mt-4">
+          <Button className="mt-4 desktop:mt-0">
             <Link to="*">¿Buscas las mesas de examenes?</Link>
           </Button>
         </div>
