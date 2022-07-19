@@ -6,7 +6,7 @@ import darkContext from "../../context/darkContext";
 
 const DarkMode = () => {
   const [positionRight, setPositionRight] = useState(true);
-  const { dark, handleTheme } = useContext(darkContext);
+  const { handleTheme } = useContext(darkContext);
 
   const handlePosition = () => {
     handleTheme();
@@ -15,10 +15,7 @@ const DarkMode = () => {
 
   return (
     <button
-      className={`
-			${
-        !dark ? "bg-sky-200" : "bg-slate-900"
-      } items-center w-16 rounded-3xl h-4 mr-8`}
+      className={`bg-sky-200 items-center w-16 rounded-3xl h-4 mr-8`}
       onClick={handlePosition}
     >
       <aside
@@ -29,8 +26,8 @@ const DarkMode = () => {
         {positionRight ? (
           <HiMoon
             size="175%"
-            color="blue"
-            className="rounded-full w-full bg-sky-300"
+            color="#e5e7eb"
+            className="rounded-full w-full bg-slate-700"
           />
         ) : (
           <TiWeatherSunny

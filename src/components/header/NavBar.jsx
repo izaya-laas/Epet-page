@@ -21,12 +21,6 @@ const NavBar = ({
       />
 
       <section className={`${navBarSectionClass}`}>
-        {/* <NavButton
-          setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          to="/"
-          text="Home"
-        /> */}
         <NavButton
           setOpenHamburger={setOpenHamburger}
           setIsOpenSubMenu={setIsOpenSubMenu}
