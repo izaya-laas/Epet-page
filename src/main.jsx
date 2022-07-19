@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <React.StrictMode>
-      <div className="bg-[#1f232b] min-h-screen">
+      <div className="min-h-screen">
         <App />
       </div>
     </React.StrictMode>
