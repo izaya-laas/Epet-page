@@ -7,11 +7,42 @@ import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import darkContext from "../context/darkContext";
-import introductionImage from "../epet-image.jpg";
+import Carrousel from "../components/header/Carrousel";
+// import introductionImage from "../epet-image.jpg";
 
 const Home = () => {
   const { dark } = useContext(darkContext);
   const [darkStyles, setDarkStyles] = useState({});
+
+  const epetImages = [
+    {
+      image: "./src/assets/1.jpg",
+      alt: "epet image",
+    },
+    {
+      image: "./src/assets/2.jpg",
+      alt: "epet image",
+    },
+    {
+      image: "./src/assets/3.jpg",
+      alt: "epet image",
+    },
+  ];
+  const awardImages = [
+    {
+      image: "./src/assets/desafio-eco.jpg",
+      alt: "desafio eco imagen",
+    },
+    {
+      image: "./src/assets/proyecto-insur.jpg",
+      alt: "Proyecto insur imagen",
+    },
+    {
+      image:
+        "./src/assets/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
+      alt: "reconocimiento inet transportador para personas no videntes imagen",
+    },
+  ];
 
   const {
     gradientStartStyles,
@@ -74,28 +105,22 @@ const Home = () => {
               <Link to="*">¿Buscas las mesas de examenes?</Link>
             </Button>
           </div>
-          <div className="my-4">
-            <div className="bg-black h-40">
-              <Subtitle className="h-full flex items-center justify-center">
-                Carrusel de imagenes
-              </Subtitle>
-            </div>
+          <article className="my-4">
+            <Subtitle className="mb-2">Nuestra escuela</Subtitle>
+            <Carrousel images={epetImages} />
             <Paragraph className="mt-2">
               Cada año actualizamos nuestras tecnicas de enseñanza,
               perfeccionando el aprendizaje del alumno.
             </Paragraph>
-          </div>
-          <div>
-            <div className="bg-black h-40">
-              <Subtitle className="h-full flex items-center justify-center">
-                Nuestros premios
-              </Subtitle>
-            </div>
+          </article>
+          <article>
+            <Subtitle className="mb-2">Nuestros premios</Subtitle>
+            <Carrousel images={awardImages} />
             <Paragraph className="mt-2">
               Nuestra secundaria ha ganado enumerosos premios, en todo el pais.
               demostrando su prestigio en su contenido de aprendizaje.
             </Paragraph>
-          </div>
+          </article>
         </main>
       </div>
     </>
