@@ -1,6 +1,4 @@
 import React from "react";
-import { useContext } from "react";
-import darkContext from "../../context/darkContext";
 
 import Contact from "./Contact";
 import MobileNav from "./MobileNav";
