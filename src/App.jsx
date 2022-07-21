@@ -3,11 +3,13 @@ import "./App.css";
 
 import Footer from "./components/footer/Footer";
 import Router from "./router/Router";
+import { useContext } from "react";
+import darkContext from "./context/darkContext";
 
 function App() {
-  // const [dark, setDark] = useContext(darkContext);
+  const { dark } = useContext(darkContext);
   return (
-    <div>
+    <div className={dark ? "bg-[#f1f1f1]" : "bg-[#1f232b]"}>
       <Header />
       <Router />
       <Footer />

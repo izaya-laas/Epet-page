@@ -59,7 +59,7 @@ const Home = () => {
       setDarkStyles({
         gradientStartStyles: "to-sky-300",
         gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
-        backgroundMain: "bg-[#f1f1f1]",
+        backgroundMain: "",
         textColor: "text-[#0f172a]",
         buttonStyles: "bg-sky-300 text-[#0f172a]",
       });
@@ -67,7 +67,7 @@ const Home = () => {
       setDarkStyles({
         gradientStartStyles: "to-[#0f172a]",
         gradientEndStyles: "from-[#0f172a] to-[#1f232b]",
-        backgroundMain: "bg-[#1f232b]",
+        backgroundMain: "",
         textColor: "text-white",
         buttonStyles: "bg-[#0f172a] text-white",
       });
@@ -76,7 +76,7 @@ const Home = () => {
 
   return (
     <>
-      <div className={`${backgroundMain}`}>
+      <div>
         <div className="home-background bg-cover bg-center h-80 desktop:h-screen">
           <div
             className={`from-transparent bg-gradient-to-b h-80 desktop:h-screen ${gradientStartStyles}`}
