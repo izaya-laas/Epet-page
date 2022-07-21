@@ -1,5 +1,4 @@
 import Header from "./components/header/Header";
-import "./App.css";
 
 import Footer from "./components/footer/Footer";
 import Router from "./router/Router";
@@ -11,7 +10,9 @@ function App() {
   return (
     <div
       className={
-        isDark ? "bg-[#1f232b] text-[#f1f1f1]" : "bg-[#f1f1f1] text-[#0f172a]"
+        isDark
+          ? "bg-third-color text-fourth-color"
+          : "bg-fourth-color text-primary-color"
       }
     >
       <Header />

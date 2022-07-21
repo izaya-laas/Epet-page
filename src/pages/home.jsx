@@ -51,15 +51,15 @@ const Home = () => {
   useEffect(() => {
     if (isDark) {
       setDarkStyles({
-        gradientStartStyles: "to-[#0f172a]",
-        gradientEndStyles: "from-[#0f172a] to-[#1f232b]",
-        buttonStyles: "bg-[#0f172a] text-white",
+        gradientStartStyles: "to-primary-color",
+        gradientEndStyles: "from-primary-color to-third-color",
+        buttonStyles: "bg-primary-color text-fourth-color",
       });
     } else {
       setDarkStyles({
-        gradientStartStyles: "to-sky-300",
-        gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
-        buttonStyles: "bg-sky-300 text-[#0f172a]",
+        gradientStartStyles: "to-secondary-color",
+        gradientEndStyles: "from-secondary-color to-fourth-color",
+        buttonStyles: "bg-secondary-color text-primary-color",
       });
     }
   }, [isDark]);

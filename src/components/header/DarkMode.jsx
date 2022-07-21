@@ -15,7 +15,7 @@ const DarkMode = () => {
 
   return (
     <button
-      className={`bg-sky-200 items-center w-16 rounded-3xl h-4 mr-8`}
+      className={`bg-secondary-color items-center w-16 rounded-3xl h-4 mr-8`}
       onClick={handlePosition}
     >
       <aside
@@ -27,13 +27,13 @@ const DarkMode = () => {
           <HiMoon
             size="175%"
             color="#e5e7eb"
-            className="rounded-full w-full bg-slate-700"
+            className="rounded-full w-full bg-third-color"
           />
         ) : (
           <TiWeatherSunny
             size="175%"
             color="yellow"
-            className="rounded-full w-full bg-slate-700 "
+            className="rounded-full w-full bg-third-color "
           />
         )}
       </aside>

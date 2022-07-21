@@ -40,28 +40,28 @@ const Carrousel = ({ images, className }) => {
 
   return (
     <div className={className}>
-      <div className="h-52 bg-black relative overflow-hidden">
+      <div className="h-52 relative overflow-hidden">
         <img src={image} alt={alt} className="object-cover h-full w-full" />
         <nav className="w-full px-1 flex justify-between absolute top-[88px]">
           <button
-            className="h-8 w-8 rounded-full bg-[#0f172a93] hover:bg-white text-center grid place-items-center"
+            className="h-8 w-8 rounded-full bg-[#0f172a93] text-center grid place-items-center"
             onClick={() => handleCurrentPosition("prev")}
           >
-            <BiLeftArrow className="w-6 h-6 text-[#7dd3fc]" />
+            <BiLeftArrow className="w-6 h-6 text-primary-color" />
           </button>
           <button
-            className="h-8 w-8 rounded-full bg-[#0f172a93] hover:bg-white text-center grid place-items-center"
+            className="h-8 w-8 rounded-full bg-op-primary-color imary-color text-center grid place-items-center"
             onClick={() => handleCurrentPosition("next")}
           >
-            <BiRightArrow className="w-6 h-6 text-[#7dd3fc]" />
+            <BiRightArrow className="w-6 h-6 text-secondary-color" />
           </button>
         </nav>
         {description && (
-          <div className="h-10 w-full absolute bottom-0 text-sm bg-[#0f172a93] text-white">
+          <div className="h-10 w-full absolute bottom-0 text-sm bg-op-primary-color text-fourth-color">
             {description}
             <Link
               to={`/noticias/${title}`}
-              className="text-sky-300 font-semibold"
+              className="text-secondary-color font-semibold"
             >
               {" "}
               ver mas...

@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 left-0 w-full flex justify-between items-center h-12 px-4 z-20 bg-slate-900 text-sky-300`}
+      className={`sticky top-0 left-0 w-full flex justify-between items-center h-12 px-4 z-20 bg-primary-color text-secondary-color`}
     >
       <div
         className={`flex items-center w-full justify-between ${

@@ -47,7 +47,7 @@ const NavBar = ({
       </section>
       <div className="flex items-center">
         <DarkMode />
-        <FaUserAlt className="bg-gray-200 p-2 rounded-full" size="40px" />
+        <FaUserAlt className="bg-fourth-color p-2 rounded-full" size="40px" />
       </div>
     </nav>
   );

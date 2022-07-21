@@ -10,6 +10,14 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+        "third-color": "var(--third-color)",
+        "fourth-color": "var(--fourth-color)",
+        "op-primary-color": "var(--op-primary-color)",
+      },
     },
   },
   plugins: [],
