@@ -7,9 +7,9 @@ import { useContext } from "react";
 import darkContext from "./context/darkContext";
 
 function App() {
-  const { dark } = useContext(darkContext);
+  const { isDark } = useContext(darkContext);
   return (
-    <div className={dark ? "bg-[#f1f1f1]" : "bg-[#1f232b]"}>
+    <div className={isDark ? "bg-[#1f232b]" : "bg-[#f1f1f1]"}>
       <Header />
       <Router />
       <Footer />

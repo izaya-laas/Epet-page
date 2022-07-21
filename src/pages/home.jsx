@@ -11,7 +11,7 @@ import Carrousel from "../components/Carrousel";
 // import introductionImage from "../epet-image.jpg";
 
 const Home = () => {
-  const { dark } = useContext(darkContext);
+  const { isDark } = useContext(darkContext);
   const [darkStyles, setDarkStyles] = useState({});
 
   const epetImages = [
@@ -46,33 +46,26 @@ const Home = () => {
     },
   ];
 
-  const {
-    gradientStartStyles,
-    gradientEndStyles,
-    backgroundMain,
-    textColor,
-    buttonStyles,
-  } = darkStyles;
+  const { gradientStartStyles, gradientEndStyles, textColor, buttonStyles } =
+    darkStyles;
 
   useEffect(() => {
-    if (dark) {
-      setDarkStyles({
-        gradientStartStyles: "to-sky-300",
-        gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
-        backgroundMain: "",
-        textColor: "text-[#0f172a]",
-        buttonStyles: "bg-sky-300 text-[#0f172a]",
-      });
-    } else {
+    if (isDark) {
       setDarkStyles({
         gradientStartStyles: "to-[#0f172a]",
         gradientEndStyles: "from-[#0f172a] to-[#1f232b]",
-        backgroundMain: "",
         textColor: "text-white",
         buttonStyles: "bg-[#0f172a] text-white",
       });
+    } else {
+      setDarkStyles({
+        gradientStartStyles: "to-sky-300",
+        gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
+        textColor: "text-[#0f172a]",
+        buttonStyles: "bg-sky-300 text-[#0f172a]",
+      });
     }
-  }, [dark]);
+  }, [isDark]);
 
   return (
     <>

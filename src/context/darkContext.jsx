@@ -2,16 +2,16 @@ import { createContext, useState } from "react";
 
 const darkContext = createContext();
 
-const initialState = false;
+const initialState = true;
 
 const DarkProvider = ({ children }) => {
-  const [dark, setDark] = useState(initialState);
+  const [isDark, setIsDark] = useState(initialState);
 
   const handleTheme = () => {
-    setDark(!dark);
+    setIsDark(!isDark);
   };
 
-  const data = { dark, handleTheme };
+  const data = { isDark, handleTheme };
 
   return <darkContext.Provider value={data}>{children}</darkContext.Provider>;
 };
