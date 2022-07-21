@@ -46,22 +46,19 @@ const Home = () => {
     },
   ];
 
-  const { gradientStartStyles, gradientEndStyles, textColor, buttonStyles } =
-    darkStyles;
+  const { gradientStartStyles, gradientEndStyles, buttonStyles } = darkStyles;
 
   useEffect(() => {
     if (isDark) {
       setDarkStyles({
         gradientStartStyles: "to-[#0f172a]",
         gradientEndStyles: "from-[#0f172a] to-[#1f232b]",
-        textColor: "text-white",
         buttonStyles: "bg-[#0f172a] text-white",
       });
     } else {
       setDarkStyles({
         gradientStartStyles: "to-sky-300",
         gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
-        textColor: "text-[#0f172a]",
         buttonStyles: "bg-sky-300 text-[#0f172a]",
       });
     }
@@ -83,9 +80,7 @@ const Home = () => {
           </div>
         </div>
         <div className={`h-20 bg-gradient-to-b ${gradientEndStyles}`}></div>
-        <main
-          className={`text-center px-4 pb-8 mx-auto desktop:w-5/6 ${textColor}`}
-        >
+        <main className="text-center px-4 pb-8 mx-auto desktop:w-5/6">
           <Paragraph className="mb-4">
             Somos una escuela tecnica que reside en Realicó, La Pampa. calle San
             lorenzo - 1330. formamos mas de 20 tecnicos en equipos e
