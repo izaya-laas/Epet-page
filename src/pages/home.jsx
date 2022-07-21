@@ -28,7 +28,6 @@ const Home = () => {
         gradientEndStyles: "from-sky-300 to-[#f1f1f1]",
         backgroundMain: "bg-[#f1f1f1]",
         textColor: "text-[#0f172a]",
-        buttonStyles: "bg-[#0f172a] text-white",
         buttonStyles: "bg-sky-300 text-[#0f172a]",
       });
     } else {
