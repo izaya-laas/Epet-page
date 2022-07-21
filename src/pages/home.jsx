@@ -7,7 +7,7 @@ import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import darkContext from "../context/darkContext";
-import Carrousel from "../components/header/Carrousel";
+import Carrousel from "../components/Carrousel";
 // import introductionImage from "../epet-image.jpg";
 
 const Home = () => {
@@ -32,6 +32,8 @@ const Home = () => {
     {
       image: "./src/assets/desafio-eco.jpg",
       alt: "desafio eco imagen",
+      description: "Alumnos crean una wea que sirve ecologicamente",
+      title: "desafio-eco",
     },
     {
       image: "./src/assets/proyecto-insur.jpg",
