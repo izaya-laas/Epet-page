@@ -33,7 +33,7 @@ const MobileNavbar = ({
         />
 
         <section
-          className={`fixed flex flex-col items-start gap-4 top-12 left-0 bg-black/75 w-full font-bold text-xl text-white pt-4 px-8 transition-transform duration-1000 h-[calc(100%_-_3rem)] ${
+          className={`fixed flex flex-col items-start gap-4 top-12 left-0 bg-black/75 w-full font-bold text-xl text-white pt-4 px-8 transition-transform duration-700 h-[calc(100%_-_3rem)] ${
             isOpenHamburger ? "translate-x-full" : "translate-x-0"
           }`}
         >
@@ -77,9 +77,23 @@ const MobileNavbar = ({
       </NavBar>
 
       {isOpenHamburger ? (
-        <GiHamburgerMenu className="" size="40px" onClick={setOpenHamburger} />
+        <GiHamburgerMenu
+          className=""
+          size="40px"
+          onClick={() => {
+            setOpenHamburger();
+            setIsOpenUserMenu(false);
+          }}
+        />
       ) : (
-        <CgCloseO className="" size="40px" onClick={setOpenHamburger} />
+        <CgCloseO
+          className=""
+          size="40px"
+          onClick={() => {
+            setOpenHamburger();
+            setIsOpenUserMenu(false);
+          }}
+        />
       )}
     </>
   );
