@@ -1,56 +1,5 @@
-import React, { useState } from "react";
-import NavButton from "./NavButton";
-import NavMenu from "./NavMenu";
-import Logo from "../Logo";
-import { FaUserAlt } from "react-icons/fa";
-import DarkMode from "./DarkMode";
-
-const NavBar = ({
-  className,
-  navBarSectionClass,
-  setOpenHamburger,
-  setIsOpenHamburger,
-}) => {
-  const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
-
-  return (
-    <nav className={className}>
-      <Logo
-        setIsOpenHamburger={setIsOpenHamburger}
-        setIsOpenSubMenu={setIsOpenSubMenu}
-      />
-
-      <section className={`${navBarSectionClass}`}>
-        <NavButton
-          setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          to="/noticias"
-          text="Noticias"
-        />
-        <NavButton
-          setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          to="/cursos"
-          text="Alumnos"
-        />
-        <NavButton
-          setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          to="/ingresantes"
-          text="Ingresantes"
-        />
-        <NavMenu
-          setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          isOpenSubMenu={isOpenSubMenu}
-        />
-      </section>
-      <div className="flex items-center">
-        <DarkMode />
-        <FaUserAlt className="bg-fourth-color p-2 rounded-full" size="40px" />
-      </div>
-    </nav>
-  );
+const NavBar = ({ children, className }) => {
+  return <nav className={className}>{children}</nav>;
 };
 
 export default NavBar;

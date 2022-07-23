@@ -13,22 +13,6 @@ const AuthProvider = ({ children }) => {
   const [userOnline, setUserOnline] = useState(false);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const verInformacion = () => {
-  //     const usuario = getUser();
-
-  //     if (usuario) {
-  //       console.log("Usuario Conectado");
-  //       setUserOnline(true);
-  //     } else {
-  //       console.log("Usuario NO Conectado");
-  //       setUserOnline(false);
-  //     }
-  //   };
-
-  //   verInformacion();
-  // }, [user, userOnline]);
-
   useEffect(() => {
     const checkUser = async () => {
       const user = getUser();
@@ -38,7 +22,6 @@ const AuthProvider = ({ children }) => {
         setUser(user);
         setUserOnline(true);
 
-        console.log(user);
         navigate("/", { replace: true });
       } else {
         setUser(null);
@@ -57,7 +40,6 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  console.log(user);
   return (
     <AuthContext.Provider value={{ user, userOnline }}>
       {children}

@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import mobileContext from "../../context/mobileContext";
 import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 
 const Header = () => {
   let [isMobile] = useContext(mobileContext);
+  const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
+  const [isOpenUserMenu, setIsOpenUserMenu] = useState(false);
 
   return (
     <header
@@ -15,7 +17,21 @@ const Header = () => {
           !isMobile && "flex-row"
         }`}
       >
-        {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
+        {isMobile ? (
+          <MobileNavbar
+            isOpenSubMenu={isOpenSubMenu}
+            setIsOpenSubMenu={setIsOpenSubMenu}
+            isOpenUserMenu={isOpenUserMenu}
+            setIsOpenUserMenu={setIsOpenUserMenu}
+          />
+        ) : (
+          <DesktopNavbar
+            isOpenSubMenu={isOpenSubMenu}
+            setIsOpenSubMenu={setIsOpenSubMenu}
+            isOpenUserMenu={isOpenUserMenu}
+            setIsOpenUserMenu={setIsOpenUserMenu}
+          />
+        )}
       </div>
     </header>
   );
