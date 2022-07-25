@@ -1,13 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
+import AuthContext from "../../context/AuthContext";
 import mobileContext from "../../context/mobileContext";
-
-const initialAvatar = localStorage.getItem("user_avatar") || "";
-const initialName = localStorage.getItem("user_name") || "";
-const initialUser = {
-  name: initialName,
-  avatar: initialAvatar,
-};
 
 const User = ({
   setIsOpenUserMenu,
@@ -16,7 +10,10 @@ const User = ({
   setIsOpenHamburger,
 }) => {
   const [isMobile] = useContext(mobileContext);
-  const [user, setUser] = useState(initialUser);
+  const { user } = useContext(AuthContext);
+
+  let user_avatar = localStorage.getItem("user_avatar") || "";
+  let user_name = localStorage.getItem("user_name") || "";
 
   const handleUserMenu = () => {
     setIsOpenUserMenu(!isOpenUserMenu);
@@ -26,7 +23,7 @@ const User = ({
 
   return (
     <>
-      {!user.avatar ? (
+      {!user ? (
         <FaUserAlt
           onClick={handleUserMenu}
           className="bg-fourth-color p-2 rounded-full"
@@ -38,9 +35,9 @@ const User = ({
           className="bg-fourth-color rounded-full overflow-hidden w-[40px] h-[40px] border"
         >
           <img
-            src={user.avatar}
+            src={user_avatar}
             className="w-[38px] h-[38px] "
-            alt={user.name}
+            alt={user_name}
           />
         </div>
       )}

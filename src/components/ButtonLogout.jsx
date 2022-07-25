@@ -9,6 +9,7 @@ const ButtonLogout = ({ setIsOpenUserMenu }) => {
         setIsOpenUserMenu(false);
         localStorage.removeItem("user_name");
         localStorage.removeItem("user_avatar");
+        console.log("Borrando");
       }}
       className="flex items-center bg-primary-color py-2 px-8 rounded-lg mx-auto text-fourth-color w-36 text-sm h-8"
     >

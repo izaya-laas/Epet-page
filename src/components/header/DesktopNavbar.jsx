@@ -46,7 +46,10 @@ const DesktopNavbar = ({
             setIsOpenSubMenu={setIsOpenSubMenu}
           />
         </div>
-        <AuthMenu isOpenUserMenu={isOpenUserMenu} />
+        <AuthMenu
+          isOpenUserMenu={isOpenUserMenu}
+          setIsOpenUserMenu={setIsOpenUserMenu}
+        />
       </NavBar>
     </>
   );

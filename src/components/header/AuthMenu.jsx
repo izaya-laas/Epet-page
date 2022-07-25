@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 
@@ -6,23 +6,8 @@ import ButtonGoogle from "../ButtonGoogle";
 import ButtonLogout from "../ButtonLogout";
 
 const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu }) => {
-  const [userData, setUserData] = useState(null);
-  const { user, userOnline } = useContext(AuthContext);
-
-  useEffect(() => {
-    if (user) {
-      const { user_metadata } = user;
-      const { avatar_url, full_name } = user_metadata;
-
-      setUserData({
-        fullname: full_name,
-        avatar: avatar_url,
-      });
-
-      localStorage.setItem("user_name", full_name);
-      localStorage.setItem("user_avatar", avatar_url);
-    }
-  }, [user]);
+  const { userOnline } = useContext(AuthContext);
+  const user_name = localStorage.getItem("user_name") || "";
 
   return (
     <aside
@@ -37,9 +22,7 @@ const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu }) => {
         </>
       ) : (
         <>
-          <p className="mt-2 mb-4 pb-1 border-b">
-            {userData && userData.fullname}
-          </p>
+          <p className="mt-2 mb-4 pb-1 border-b">{user_name}</p>
           <ButtonLogout setIsOpenUserMenu={setIsOpenUserMenu} />
           <Link
             to="/perfil"

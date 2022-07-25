@@ -22,6 +22,11 @@ const AuthProvider = ({ children }) => {
         setUser(user);
         setUserOnline(true);
 
+        const { user_metadata } = user;
+        const { avatar_url, full_name } = user_metadata;
+        localStorage.setItem("user_name", full_name);
+        localStorage.setItem("user_avatar", avatar_url);
+
         navigate("/", { replace: true });
       } else {
         setUser(null);
