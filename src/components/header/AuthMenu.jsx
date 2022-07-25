@@ -23,7 +23,7 @@ const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu }) => {
 
   return (
     <aside
-      className={`absolute min-w-[10rem] w-1/5 pb-6 text-center bg-[#1c2336] text-fourth-color right-0 top-12 rounded-bl-xl transition-transform duration-300 ${
+      className={`fixed min-w-[10rem] w-1/5 pb-6 text-center bg-[#1c2336] text-fourth-color right-0 top-12 rounded-bl-xl transition-transform duration-300 ${
         isOpenUserMenu ? "" : "translate-x-80"
       }`}
     >
