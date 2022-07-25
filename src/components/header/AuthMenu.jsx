@@ -18,6 +18,9 @@ const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu }) => {
         fullname: full_name,
         avatar: avatar_url,
       });
+
+      localStorage.setItem("user_name", full_name);
+      localStorage.setItem("user_avatar", avatar_url);
     }
   }, [user]);
 
