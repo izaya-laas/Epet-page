@@ -48,6 +48,7 @@ const NavBar = ({
           setOpenHamburger={setOpenHamburger}
           setIsOpenSubMenu={setIsOpenSubMenu}
           isOpenSubMenu={isOpenSubMenu}
+          setIsOpenUserMenu={setIsOpenUserMenu}
         />
       </section>
       <div className="flex items-center">

@@ -4,13 +4,19 @@ import NavButton from "./NavButton";
 
 const courses = ["1er", "2do", "3ero", "4to", "5to", "6to", "7mo"];
 
-const NavMenu = ({ setOpenHamburger, setIsOpenSubMenu, isOpenSubMenu }) => {
+const NavMenu = ({
+  setOpenHamburger,
+  setIsOpenSubMenu,
+  isOpenSubMenu,
+  setIsOpenUserMenu,
+}) => {
   return (
     <nav className="desktop:flex">
       <button
         className="flex items-center"
         onClick={() => {
           setIsOpenSubMenu(!isOpenSubMenu);
+          setIsOpenUserMenu(false);
         }}
       >
         <span className="font-bold text-xl">Nuestros cursos</span>
