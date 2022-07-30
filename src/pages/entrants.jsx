@@ -1,9 +1,10 @@
 import React from "react";
 import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
-import paso1 from "../ingresantes2022-paso1.jpg";
-import paso2 from "../ingresantes2022-paso2.jpg";
-import paso3 from "../ingresantes2022-paso3.jpg";
+
+const paso1 = "https://i.ibb.co/xXGsvjY/ingresantes2022-paso1.jpg";
+const paso2 = "https://i.ibb.co/61HtzGD/ingresantes2022-paso2.jpg";
+const paso3 = "https://i.ibb.co/JQ8mGQW/ingresantes2022-paso3.jpg";
 
 const Entrants = () => {
   return (
