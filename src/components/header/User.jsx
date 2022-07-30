@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { FaUserAlt } from "react-icons/fa";
-import AuthContext from "../../context/AuthContext";
 import mobileContext from "../../context/mobileContext";
 
 const User = ({
@@ -8,12 +7,12 @@ const User = ({
   isOpenUserMenu,
   setIsOpenSubMenu,
   setIsOpenHamburger,
+  user,
 }) => {
   const [isMobile] = useContext(mobileContext);
-  const { user } = useContext(AuthContext);
 
-  let user_avatar = localStorage.getItem("user_avatar") || "";
-  let user_name = localStorage.getItem("user_name") || "";
+  const user_avatar = localStorage.getItem("user_avatar") || "";
+  const user_name = localStorage.getItem("user_name") || "";
 
   const handleUserMenu = () => {
     setIsOpenUserMenu(!isOpenUserMenu);

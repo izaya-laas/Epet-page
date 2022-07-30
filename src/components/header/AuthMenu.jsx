@@ -1,12 +1,8 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import AuthContext from "../../context/AuthContext";
-
 import ButtonGoogle from "../ButtonGoogle";
 import ButtonLogout from "../ButtonLogout";
 
-const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu }) => {
-  const { userOnline } = useContext(AuthContext);
+const AuthMenu = ({ isOpenUserMenu, setIsOpenUserMenu, userOnline }) => {
   const user_name = localStorage.getItem("user_name") || "";
 
   return (
