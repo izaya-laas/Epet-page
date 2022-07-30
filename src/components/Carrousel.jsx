@@ -47,7 +47,7 @@ const Carrousel = ({ images, className }) => {
             className="h-8 w-8 rounded-full bg-[#0f172a93] text-center grid place-items-center"
             onClick={() => handleCurrentPosition("prev")}
           >
-            <BiLeftArrow className="w-6 h-6 text-primary-color" />
+            <BiLeftArrow className="w-6 h-6 text-secondary-color" />
           </button>
           <button
             className="h-8 w-8 rounded-full bg-op-primary-color imary-color text-center grid place-items-center"

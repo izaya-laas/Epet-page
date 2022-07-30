@@ -23,7 +23,3 @@ function App() {
 }
 
 export default App;
-
-/* <IntroductionImage src={image} /> */
-
-/* <div className="App relative z-10 bg-gradient-to-b from-white to-[#ffffff8a]"></div> */
