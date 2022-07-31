@@ -9,38 +9,8 @@ import Title from "../components/Title";
 import darkContext from "../context/darkContext";
 import Carrousel from "../components/Carrousel";
 
-const EPET_IMAGES = [
-  {
-    image: "./src/assets/1.jpg",
-    alt: "epet image",
-  },
-  {
-    image: "./src/assets/2.jpg",
-    alt: "epet image",
-  },
-  {
-    image: "./src/assets/3.jpg",
-    alt: "epet image",
-  },
-];
-const AWARDS_IMAGES = [
-  {
-    image: "./src/assets/desafio-eco.jpg",
-    alt: "desafio eco imagen",
-    description: "Alumnos crean una wea que sirve ecologicamente",
-    title: "desafio-eco",
-  },
-  {
-    image: "./src/assets/proyecto-insur.jpg",
-    alt: "Proyecto insur imagen",
-    description: "Alumnos de 6to año participan en un proyecto de plastico",
-  },
-  {
-    image:
-      "./src/assets/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
-    alt: "reconocimiento inet transportador para personas no videntes imagen",
-  },
-];
+import EPET_IMAGES from "../db/epet-images.json";
+import AWARDS_IMAGES from "../db/awards-images.json";
 
 const Home = () => {
   const { isDark } = useContext(darkContext);
