@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        desktop: "800px",
+        tablet: "600px",
+        desktop: "1024px",
       },
 
       fontFamily: {

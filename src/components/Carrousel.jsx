@@ -34,9 +34,9 @@ const Carrousel = ({ images, className }) => {
 
   return (
     <div className={className}>
-      <div className="h-52 relative overflow-hidden">
+      <div className="h-full relative overflow-hidden">
         <img src={image} alt={alt} className="object-cover h-full w-full" />
-        <nav className="w-full px-1 flex justify-between absolute top-[88px]">
+        <nav className="w-full px-1 flex justify-between absolute top-1/2 -translate-y-1/2">
           <button
             className="h-8 w-8 rounded-full bg-[#0f172a93] text-center grid place-items-center"
             onClick={prevImage}
