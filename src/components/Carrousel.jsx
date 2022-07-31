@@ -51,7 +51,7 @@ const Carrousel = ({ images, className }) => {
           </button>
         </nav>
         {description && (
-          <div className="h-10 w-full absolute bottom-0 text-sm bg-op-primary-color text-fourth-color">
+          <div className="h-10 w-full absolute bottom-0 text-sm bg-op-primary-color text-fourth-color desktop:text-base">
             {description}
             <Link
               to={`/noticias/${title}`}

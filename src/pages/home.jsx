@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div className={`h-20 bg-gradient-to-b ${gradientEndStyles}`}></div>
-        <main className="text-center px-4 pb-8 mx-auto tablet:w-5/6">
+        <main className="text-center relative px-4 pb-8 mx-auto tablet:w-3/4 tablet:px-0">
           <Paragraph className="mb-4">
             Somos una escuela tecnica que reside en Realicó, La Pampa. calle San
             lorenzo - 1330. formamos mas de 20 tecnicos en equipos e
@@ -64,28 +64,28 @@ const Home = () => {
               <Link to="*">¿Buscas las mesas de examenes?</Link>
             </Button>
           </div>
-          <article className="my-6 tablet:w-3/4 tablet:mx-auto">
+          <article className="my-6 tablet:mx-auto desktop:w-3/4">
             <Subtitle className={`mb-2 ${titleStyles}`}>
               Nuestra escuela
             </Subtitle>
             <Carrousel
               images={EPET_IMAGES}
-              className="h-60 tablet:h-72 desktop:h-96"
+              className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
             />
             <Paragraph className="mt-2">
               Cada año actualizamos nuestras tecnicas de enseñanza,
               perfeccionando el aprendizaje del alumno.
             </Paragraph>
           </article>
-          <article className="tablet:w-3/4 tablet:mx-auto">
+          <article className="tablet:mx-auto desktop:w-3/4">
             <Subtitle className={`mb-2 ${titleStyles}`}>
               Nuestros premios
             </Subtitle>
             <Carrousel
               images={AWARDS_IMAGES}
-              className="h-60 tablet:h-72 desktop:h-96"
+              className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
             />
-            <Paragraph className="mt-2">
+            <Paragraph className="mt-2 w-full">
               Nuestra secundaria ha ganado enumerosos premios, en todo el pais.
               demostrando su prestigio en su contenido de aprendizaje.
             </Paragraph>
