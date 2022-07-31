@@ -11,7 +11,7 @@ const MobileProvider = ({ children }) => {
   let { width } = useScreenSize();
 
   useEffect(() => {
-    setIsMobile(width < 800);
+    setIsMobile(width < 1024);
   }, [width]);
 
   const data = [isMobile];
