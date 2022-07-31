@@ -1,25 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ItemLink from "./ItemLink";
+import SocialNav from "./SocialNav";
 
 const MobileNav = () => {
   return (
-    <div className="text-center">
+    <div className="text-center tablet:flex tablet:border-b tablet:justify-between tablet:items-center">
       <nav>
-        <ul>
-          <li className="text-sky-300 relative flex justify-center font-bold mb-2 before:border before:absolute before:w-[75%] before:-bottom-1">
+        <ul className="tablet:flex tablet:gap-2">
+          <ItemLink className="before:border before:absolute before:w-[75%] before:-bottom-1 tablet:before:content-none tablet:border-r tablet:pr-2">
             <Link to="/contacto">Contacto</Link>
-          </li>
-          <li className="text-sky-300 relative flex justify-center font-bold mb-2 before:border before:absolute before:w-[50%] before:-bottom-1">
+          </ItemLink>
+          <ItemLink className="before:border before:absolute before:w-[50%] before:-bottom-1 tablet:before:content-none tablet:border-r tablet:pr-2">
             <Link to="/noticias">Noticias</Link>
-          </li>
-          <li className="text-sky-300 relative flex justify-center font-bold mb-2 before:border before:absolute before:w-[75%] before:-bottom-1">
+          </ItemLink>
+          <ItemLink className="before:border before:absolute before:w-[75%] before:-bottom-1 tablet:before:content-none tablet:border-r tablet:pr-2">
             <Link to="/cursos">Alumnos</Link>
-          </li>
-          <li className="text-sky-300 font-bold">
+          </ItemLink>
+          <ItemLink>
             <Link to="/ingresantes">Ingresantes</Link>
-          </li>
+          </ItemLink>
         </ul>
       </nav>
+      <SocialNav />
     </div>
   );
 };
