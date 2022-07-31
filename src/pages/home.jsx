@@ -8,44 +8,43 @@ import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import darkContext from "../context/darkContext";
 import Carrousel from "../components/Carrousel";
-// import introductionImage from "../epet-image.jpg";
+
+const EPET_IMAGES = [
+  {
+    image: "./src/assets/1.jpg",
+    alt: "epet image",
+  },
+  {
+    image: "./src/assets/2.jpg",
+    alt: "epet image",
+  },
+  {
+    image: "./src/assets/3.jpg",
+    alt: "epet image",
+  },
+];
+const AWARDS_IMAGES = [
+  {
+    image: "./src/assets/desafio-eco.jpg",
+    alt: "desafio eco imagen",
+    description: "Alumnos crean una wea que sirve ecologicamente",
+    title: "desafio-eco",
+  },
+  {
+    image: "./src/assets/proyecto-insur.jpg",
+    alt: "Proyecto insur imagen",
+    description: "Alumnos de 6to año participan en un proyecto de plastico",
+  },
+  {
+    image:
+      "./src/assets/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
+    alt: "reconocimiento inet transportador para personas no videntes imagen",
+  },
+];
 
 const Home = () => {
   const { isDark } = useContext(darkContext);
   const [darkStyles, setDarkStyles] = useState({});
-
-  const epetImages = [
-    {
-      image: "./src/assets/1.jpg",
-      alt: "epet image",
-    },
-    {
-      image: "./src/assets/2.jpg",
-      alt: "epet image",
-    },
-    {
-      image: "./src/assets/3.jpg",
-      alt: "epet image",
-    },
-  ];
-  const awardImages = [
-    {
-      image: "./src/assets/desafio-eco.jpg",
-      alt: "desafio eco imagen",
-      description: "Alumnos crean una wea que sirve ecologicamente",
-      title: "desafio-eco",
-    },
-    {
-      image: "./src/assets/proyecto-insur.jpg",
-      alt: "Proyecto insur imagen",
-    },
-    {
-      image:
-        "./src/assets/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
-      alt: "reconocimiento inet transportador para personas no videntes imagen",
-    },
-  ];
-
   const { gradientStartStyles, gradientEndStyles, buttonStyles } = darkStyles;
 
   useEffect(() => {
@@ -96,7 +95,7 @@ const Home = () => {
           </div>
           <article className="my-4">
             <Subtitle className="mb-2">Nuestra escuela</Subtitle>
-            <Carrousel images={epetImages} />
+            <Carrousel images={EPET_IMAGES} />
             <Paragraph className="mt-2">
               Cada año actualizamos nuestras tecnicas de enseñanza,
               perfeccionando el aprendizaje del alumno.
@@ -104,7 +103,7 @@ const Home = () => {
           </article>
           <article>
             <Subtitle className="mb-2">Nuestros premios</Subtitle>
-            <Carrousel images={awardImages} />
+            <Carrousel images={AWARDS_IMAGES} />
             <Paragraph className="mt-2">
               Nuestra secundaria ha ganado enumerosos premios, en todo el pais.
               demostrando su prestigio en su contenido de aprendizaje.
