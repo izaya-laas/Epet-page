@@ -45,20 +45,24 @@ const AWARDS_IMAGES = [
 const Home = () => {
   const { isDark } = useContext(darkContext);
   const [darkStyles, setDarkStyles] = useState({});
-  const { gradientStartStyles, gradientEndStyles, buttonStyles } = darkStyles;
+  const { titleStyles, gradientStartStyles, gradientEndStyles, buttonStyles } =
+    darkStyles;
 
   useEffect(() => {
     if (isDark) {
       setDarkStyles({
+        titleStyles: "text-secondary-color",
         gradientStartStyles: "to-primary-color",
         gradientEndStyles: "from-primary-color to-third-color",
-        buttonStyles: "bg-primary-color text-fourth-color",
+        buttonStyles: "bg-primary-color text-fourth-color border-fourth-color",
       });
     } else {
       setDarkStyles({
+        titleStyles: "text-primary-color",
         gradientStartStyles: "to-secondary-color",
         gradientEndStyles: "from-secondary-color to-fourth-color",
-        buttonStyles: "bg-secondary-color text-primary-color",
+        buttonStyles:
+          "bg-secondary-color text-primary-color border-primary-color",
       });
     }
   }, [isDark]);
@@ -66,9 +70,9 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className="home-background bg-cover bg-center h-80 desktop:h-screen">
+        <div className="home-background bg-cover bg-center h-96 desktop:h-screen">
           <div
-            className={`from-transparent bg-gradient-to-b h-80 desktop:h-screen ${gradientStartStyles}`}
+            className={`from-transparent bg-gradient-to-b h-96 desktop:h-screen ${gradientStartStyles}`}
           >
             <div className="h-full opacity-95 p-2 rounded-2xl">
               <Title className="text-white flex justify-center items-center h-full text-center">
@@ -93,8 +97,10 @@ const Home = () => {
               <Link to="*">¿Buscas las mesas de examenes?</Link>
             </Button>
           </div>
-          <article className="my-4">
-            <Subtitle className="mb-2">Nuestra escuela</Subtitle>
+          <article className="my-6">
+            <Subtitle className={`mb-2 ${titleStyles}`}>
+              Nuestra escuela
+            </Subtitle>
             <Carrousel images={EPET_IMAGES} />
             <Paragraph className="mt-2">
               Cada año actualizamos nuestras tecnicas de enseñanza,
@@ -102,7 +108,9 @@ const Home = () => {
             </Paragraph>
           </article>
           <article>
-            <Subtitle className="mb-2">Nuestros premios</Subtitle>
+            <Subtitle className={`mb-2 ${titleStyles}`}>
+              Nuestros premios
+            </Subtitle>
             <Carrousel images={AWARDS_IMAGES} />
             <Paragraph className="mt-2">
               Nuestra secundaria ha ganado enumerosos premios, en todo el pais.
