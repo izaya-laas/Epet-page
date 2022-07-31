@@ -5,7 +5,7 @@ import SocialNav from "./SocialNav";
 
 const MobileNav = () => {
   return (
-    <div className="text-center tablet:flex tablet:border-b tablet:justify-between tablet:items-center">
+    <div className="text-center tablet:flex desktop:text-lg tablet:border-b tablet:justify-between tablet:items-center">
       <nav>
         <ul className="tablet:flex tablet:gap-2">
           <ItemLink className="before:border before:absolute before:w-[75%] before:-bottom-1 tablet:before:content-none tablet:border-r tablet:pr-2">
