@@ -11,7 +11,7 @@ const paso3 = "https://i.ibb.co/JQ8mGQW/ingresantes2022-paso3.jpg";
 const Entrants = () => {
   return (
     <>
-      <main className="p-4 ">
+      <main className="p-4 text-center relative px-4 pb-8 mx-auto tablet:w-3/4 tablet:px-0">
         <Title className="text-center mb-10 pb-2 border-b-2 border-dotted ">
           Inscripciones
         </Title>
