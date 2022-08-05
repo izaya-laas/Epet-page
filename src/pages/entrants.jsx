@@ -15,7 +15,7 @@ const Entrants = () => {
         <Title className="text-center mb-10 pb-2 border-b-2 border-dotted ">
           Inscripciones
         </Title>
-        <section className="text-lg text-left">
+        <section className="text-lg text-left desktop:w-3/4 desktop:mx-auto">
           <Subtitle className="text-center text-secondary-color">
             ¿Cómo ingresar a la <bold>EPET N°6</bold>?
           </Subtitle>

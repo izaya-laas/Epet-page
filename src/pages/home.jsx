@@ -1,41 +1,18 @@
 import React from "react";
-import { useEffect } from "react";
-import { useContext, useState } from "react";
+import { useStyles } from "../hooks/useStyles";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
-import darkContext from "../context/darkContext";
 import Carrousel from "../components/Carrousel";
 
 import EPET_IMAGES from "../db/epet-images.json";
 import AWARDS_IMAGES from "../db/awards-images.json";
 
 const Home = () => {
-  const { isDark } = useContext(darkContext);
-  const [darkStyles, setDarkStyles] = useState({});
   const { titleStyles, gradientStartStyles, gradientEndStyles, buttonStyles } =
-    darkStyles;
-
-  useEffect(() => {
-    if (isDark) {
-      setDarkStyles({
-        titleStyles: "text-secondary-color",
-        gradientStartStyles: "to-primary-color",
-        gradientEndStyles: "from-primary-color to-third-color",
-        buttonStyles: "bg-primary-color text-fourth-color border-fourth-color",
-      });
-    } else {
-      setDarkStyles({
-        titleStyles: "text-primary-color",
-        gradientStartStyles: "to-secondary-color",
-        gradientEndStyles: "from-secondary-color to-fourth-color",
-        buttonStyles:
-          "bg-secondary-color text-primary-color border-primary-color",
-      });
-    }
-  }, [isDark]);
+    useStyles();
 
   return (
     <>
@@ -44,7 +21,7 @@ const Home = () => {
           <div
             className={`from-transparent bg-gradient-to-b h-96 desktop:h-[calc(100vh-8rem)] flex justify-center items-center ${gradientStartStyles}`}
           >
-            <Title className="text-fourth-color text-center tablet:text-5xl desktop:text-6xl">
+            <Title className="text-fourth-color text-center">
               Una <br /> Secundaria <br /> Excepcional
             </Title>
           </div>
