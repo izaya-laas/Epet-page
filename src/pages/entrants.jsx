@@ -3,20 +3,24 @@ import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import { FiCheckCircle } from "react-icons/fi";
+import { useStyles } from "../hooks/useStyles";
+import Main from "../components/Main";
 
 const paso1 = "https://i.ibb.co/xXGsvjY/ingresantes2022-paso1.jpg";
 const paso2 = "https://i.ibb.co/61HtzGD/ingresantes2022-paso2.jpg";
 const paso3 = "https://i.ibb.co/JQ8mGQW/ingresantes2022-paso3.jpg";
 
 const Entrants = () => {
+  const { subtitleStyles, linkStyles } = useStyles();
+
   return (
     <>
-      <main className="p-4 text-center relative px-4 pb-8 mx-auto tablet:w-3/4 tablet:px-0">
+      <Main>
         <Title className="text-center mb-10 pb-2 border-b-2 border-dotted ">
           Inscripciones
         </Title>
         <section className="text-lg text-left desktop:w-3/4 desktop:mx-auto">
-          <Subtitle className="text-center text-secondary-color">
+          <Subtitle className={`text-center ${subtitleStyles}`}>
             ¿Cómo ingresar a la <bold>EPET N°6</bold>?
           </Subtitle>
           <Paragraph className="text-center">
@@ -29,7 +33,7 @@ const Entrants = () => {
                 <strong>Paso 1: </strong>
                 <a
                   href="https://vozporvos.lapampa.edu.ar/"
-                  className="text-blue-300 underline"
+                  className={`underline ${linkStyles}`}
                 >
                   Registro en Voz por vos
                 </a>
@@ -68,7 +72,7 @@ const Entrants = () => {
             <a href="tel:+542302-210818">2302-210818</a>
           </Paragraph>
         </section>
-      </main>
+      </Main>
     </>
   );
 };

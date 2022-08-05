@@ -1,6 +1,7 @@
 import React from "react";
 import { useStyles } from "../hooks/useStyles";
 import { Link } from "react-router-dom";
+import Main from "../components/Main";
 import Button from "../components/Button";
 import Paragraph from "../components/Paragraph";
 import Subtitle from "../components/Subtitle";
@@ -11,8 +12,12 @@ import EPET_IMAGES from "../db/epet-images.json";
 import AWARDS_IMAGES from "../db/awards-images.json";
 
 const Home = () => {
-  const { titleStyles, gradientStartStyles, gradientEndStyles, buttonStyles } =
-    useStyles();
+  const {
+    subtitleStyles,
+    gradientStartStyles,
+    gradientEndStyles,
+    buttonStyles,
+  } = useStyles();
 
   return (
     <>
@@ -27,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className={`h-20 bg-gradient-to-b ${gradientEndStyles}`}></div>
-        <main className="text-center relative px-4 pb-8 mx-auto tablet:w-3/4 tablet:px-0">
+        <Main>
           <Paragraph className="mb-4">
             Somos una escuela tecnica que reside en Realicó, La Pampa. calle San
             lorenzo - 1330. formamos mas de 20 tecnicos en equipos e
@@ -42,7 +47,7 @@ const Home = () => {
             </Button>
           </div>
           <article className="my-6 tablet:mx-auto desktop:w-3/4">
-            <Subtitle className={`mb-2 ${titleStyles}`}>
+            <Subtitle className={`mb-2 ${subtitleStyles}`}>
               Nuestra escuela
             </Subtitle>
             <Carrousel
@@ -55,7 +60,7 @@ const Home = () => {
             </Paragraph>
           </article>
           <article className="tablet:mx-auto desktop:w-3/4">
-            <Subtitle className={`mb-2 ${titleStyles}`}>
+            <Subtitle className={`mb-2 ${subtitleStyles}`}>
               Nuestros premios
             </Subtitle>
             <Carrousel
@@ -67,7 +72,7 @@ const Home = () => {
               demostrando su prestigio en su contenido de aprendizaje.
             </Paragraph>
           </article>
-        </main>
+        </Main>
       </div>
     </>
   );
