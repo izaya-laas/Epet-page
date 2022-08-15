@@ -9,23 +9,25 @@ const styleOptionsCssProperties = ({
 }) => {
   const styles = {};
 
-  if (typeof baseColor !== "undefined") styles.baseColor = `bg-[${baseColor}]`;
+  if (typeof baseColor !== "undefined") styles.backgroundColor = baseColor;
 
-  if (height) styles.height = `h-[${height}px]`;
+  if (height) styles.height = `${height}px`;
 
-  if (width) styles.width = `w-[${width}px]`;
+  if (width) styles.width = `${width}px`;
 
   if (circle) {
     if (width || height) {
-      styles.rounded = `rounded-full`;
-      styles.width = `w-[${width}px]`;
-      styles.height = `h-[${width}px]`;
+      styles.borderRadius = `100%`;
+      styles.width = `${width}px`;
+      styles.height = `${width}px`;
     } else {
-      styles.rounded = `rounded-full w-10 h-10`;
+      styles.borderRadius = `100%`;
+      styles.width = `50px`;
+      styles.height = `50px`;
     }
   }
 
-  if (rounded) styles.rounded = "rounded-md";
+  if (rounded) styles.borderRadius = "2px";
 
   return styles;
 };
@@ -37,9 +39,7 @@ const Skeleton = ({ count = 1, ...props }) => {
   const elements = [];
 
   const skeletonDiv = (
-    <div
-      className={`animate-pulse mt-2 ${Object.values(styles).join(" ")}`}
-    ></div>
+    <div className={`animate-pulse mt-2`} style={styles}></div>
   );
 
   for (let i = 0; i < countCeil; i++) {
