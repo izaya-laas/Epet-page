@@ -46,14 +46,16 @@ const Home = () => {
               <Link to="*">¿Buscas las mesas de examenes?</Link>
             </Button>
           </div>
-          <article className="my-6 tablet:mx-auto desktop:w-3/4">
+          <article className="my-6 tablet:mx-auto desktop:w-3/4 desktop:text-center">
             <Subtitle className={`mb-2 ${subtitleStyles}`}>
               Nuestra escuela
             </Subtitle>
-            <Carrousel
-              images={EPET_IMAGES}
-              className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
-            />
+            <div className=" desktop:w-full desktop:flex desktop:justify-center ">
+              <Carrousel
+                images={EPET_IMAGES}
+                className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
+              />
+            </div>
             <Paragraph className="mt-2">
               Cada año actualizamos nuestras tecnicas de enseñanza,
               perfeccionando el aprendizaje del alumno.
@@ -63,10 +65,12 @@ const Home = () => {
             <Subtitle className={`mb-2 ${subtitleStyles}`}>
               Nuestros premios
             </Subtitle>
-            <Carrousel
-              images={AWARDS_IMAGES}
-              className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
-            />
+            <div className=" desktop:w-full desktop:flex desktop:justify-center ">
+              <Carrousel
+                images={AWARDS_IMAGES}
+                className="h-60 tablet:h-72 desktop:h-96 tablet:mx-auto tablet:aspect-video"
+              />
+            </div>
             <Paragraph className="mt-2 w-full">
               Nuestra secundaria ha ganado enumerosos premios, en todo el pais.
               demostrando su prestigio en su contenido de aprendizaje.
