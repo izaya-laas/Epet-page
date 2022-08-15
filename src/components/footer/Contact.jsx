@@ -17,7 +17,7 @@ const Contact = () => {
               2302-210818
             </a>
           </li>
-          <li c>
+          <li>
             <a href="mailto:lautaronorielasat@gmail.com">
               <AiOutlineMail className="inline mr-2" />
               epetn6realico@epet6.edu.ar
