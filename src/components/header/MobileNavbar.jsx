@@ -17,6 +17,9 @@ const MobileNavbar = ({ children, setIsOpenUserMenu }) => {
           isOpenHamburger ? "translate-x-full" : "translate-x-0"
         }`,
         setIsOpenUserMenu,
+        setIsOpenHamburger,
+        isOpenHamburger,
+        setOpenHamburger,
       })
     );
   };
