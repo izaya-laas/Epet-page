@@ -28,9 +28,8 @@ const Courses = () => {
       <section className="desktop:w-3/4 desktop:mx-auto">
         {COURSES.map((course) => {
           return (
-            <Link to={`${course.index}`}>
+            <Link to={`${course.index}`} key={course.index}>
               <div
-                key={course.index}
                 className={` m-4 p-4 rounded-2xl border-b overflow-hidden ${buttonStyles}`}
               >
                 <Paragraph className="rounded-2xl text-left ">
