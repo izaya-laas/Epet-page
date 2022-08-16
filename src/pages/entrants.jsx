@@ -5,6 +5,7 @@ import Title from "../components/Title";
 import { FiCheckCircle } from "react-icons/fi";
 import { useStyles } from "../hooks/useStyles";
 import Main from "../components/Main";
+import SkeletonImage from "../components/SkeletonImage";
 
 const paso1 = "https://i.ibb.co/xXGsvjY/ingresantes2022-paso1.jpg";
 const paso2 = "https://i.ibb.co/61HtzGD/ingresantes2022-paso2.jpg";
@@ -21,13 +22,13 @@ const Entrants = () => {
         </Title>
         <section className="text-lg text-left desktop:w-3/4 desktop:mx-auto">
           <Subtitle className={`text-center ${subtitleStyles}`}>
-            ¿Cómo ingresar a la <bold>EPET N°6</bold>?
+            ¿Cómo ingresar a la <strong>EPET N°6</strong>?
           </Subtitle>
           <Paragraph className="text-center">
             Segui estos tres pasos para inscribirte en el ciclo electivo 2022
           </Paragraph>
           <ol className="flex flex-col justify-center items-center">
-            <li className="my-6">
+            <li className="my-6 w-full">
               <FiCheckCircle className="inline mr-1" />
               <Paragraph className="my-2 inline-block">
                 <strong>Paso 1: </strong>
@@ -38,32 +39,45 @@ const Entrants = () => {
                   Registro en Voz por vos
                 </a>
               </Paragraph>
-              <img
+
+              <SkeletonImage
+                className="rounded-2xl"
                 src={paso1}
                 alt="Paso 1 a seguir para registrarte en epet n°6"
-                className="rounded-2xl"
+                //SkeletonProps
+                height="350"
+                baseColor="#ccc"
+                rounded
               />
             </li>
-            <li className="my-6">
+            <li className="my-6 w-full">
               <FiCheckCircle className="inline mr-1" />
               <Paragraph className="my-2 inline-block">
                 <strong>Paso 2:</strong> Carga tus datos
               </Paragraph>
-              <img
+              <SkeletonImage
+                className="rounded-2xl"
                 src={paso2}
                 alt="Paso 2 a seguir para registrarte en epet n°6"
-                className="rounded-2xl"
+                //SkeletonProps
+                height="350"
+                baseColor="#ccc"
+                rounded
               />
             </li>
-            <li className="my-6">
+            <li className="my-6 w-full">
               <FiCheckCircle className="inline mr-1" />
               <Paragraph className="my-2 inline-block">
                 <strong>Paso 3:</strong> Inscripciones ciclo 2022
               </Paragraph>
-              <img
+              <SkeletonImage
+                className="rounded-2xl"
                 src={paso3}
                 alt="Paso 3 a seguir para registrarte en epet n°6"
-                className="rounded-2xl"
+                //SkeletonProps
+                height="350"
+                baseColor="#ccc"
+                rounded
               />
             </li>
           </ol>
