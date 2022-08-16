@@ -4,8 +4,11 @@ import { TiWeatherSunny } from "react-icons/ti";
 import { HiMoon } from "react-icons/hi";
 import darkContext from "../../context/darkContext";
 
+const initialPositionRight =
+  JSON.parse(localStorage.getItem("darkMode")) ?? true;
+
 const DarkMode = () => {
-  const [positionRight, setPositionRight] = useState(true);
+  const [positionRight, setPositionRight] = useState(initialPositionRight);
   const { handleTheme } = useContext(darkContext);
 
   const handlePosition = () => {
