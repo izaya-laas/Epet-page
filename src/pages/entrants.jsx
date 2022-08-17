@@ -7,9 +7,9 @@ import { useStyles } from "../hooks/useStyles";
 import Main from "../components/Main";
 import SkeletonImage from "../components/SkeletonImage";
 
-const paso1 = "https://i.ibb.co/xXGsvjY/ingresantes2022-paso1.jpg";
-const paso2 = "https://i.ibb.co/61HtzGD/ingresantes2022-paso2.jpg";
-const paso3 = "https://i.ibb.co/JQ8mGQW/ingresantes2022-paso3.jpg";
+const paso1 = "https://i.ibb.co/h18SM3f/ingresantes2022-paso1.webp";
+const paso2 = "https://i.ibb.co/rxKX8f6/ingresantes2022-paso2.webp";
+const paso3 = "https://i.ibb.co/ZcsbLqD/ingresantes2022-paso3.webp";
 
 const Entrants = () => {
   const { subtitleStyles, linkStyles } = useStyles();
