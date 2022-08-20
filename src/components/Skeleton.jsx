@@ -9,7 +9,8 @@ const styleOptionsCssProperties = ({
 }) => {
   const styles = {};
 
-  if (typeof baseColor !== "undefined") styles.backgroundColor = baseColor;
+  if (baseColor) styles.backgroundColor = baseColor;
+  else styles.backgroundColor = "#fff";
 
   if (height) styles.height = `${height}px`;
 
@@ -27,7 +28,7 @@ const styleOptionsCssProperties = ({
     }
   }
 
-  if (rounded) styles.borderRadius = "2px";
+  if (rounded) styles.borderRadius = "4px";
 
   return styles;
 };

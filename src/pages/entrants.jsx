@@ -7,13 +7,14 @@ import { useStyles } from "../hooks/useStyles";
 import Main from "../components/Main";
 import SkeletonImage from "../components/SkeletonImage";
 
-const paso1 = "https://i.ibb.co/h18SM3f/ingresantes2022-paso1.webp";
-const paso2 = "https://i.ibb.co/rxKX8f6/ingresantes2022-paso2.webp";
-const paso3 = "https://i.ibb.co/ZcsbLqD/ingresantes2022-paso3.webp";
+const paso1 = "https://i.ibb.co/SBrLBYK/ingresantes2022-paso1.webp";
+const paso2 = "https://i.ibb.co/njrf8B9/ingresantes2022-paso2.webp";
+const paso3 = "https://i.ibb.co/wsn32tw/ingresantes2022-paso3.webp";
 
 const Entrants = () => {
-  const { subtitleStyles, linkStyles } = useStyles();
+  const { subtitleStyles, linkStyles, skeletonBaseColor } = useStyles();
 
+  console.log(skeletonBaseColor);
   return (
     <>
       <Main>
@@ -46,7 +47,7 @@ const Entrants = () => {
                 alt="Paso 1 a seguir para registrarte en epet n°6"
                 //SkeletonProps
                 height="350"
-                baseColor="#ccc"
+                baseColor={skeletonBaseColor}
                 rounded
               />
             </li>
@@ -61,7 +62,7 @@ const Entrants = () => {
                 alt="Paso 2 a seguir para registrarte en epet n°6"
                 //SkeletonProps
                 height="350"
-                baseColor="#ccc"
+                baseColor={skeletonBaseColor}
                 rounded
               />
             </li>
@@ -76,7 +77,7 @@ const Entrants = () => {
                 alt="Paso 3 a seguir para registrarte en epet n°6"
                 //SkeletonProps
                 height="350"
-                baseColor="#ccc"
+                baseColor={skeletonBaseColor}
                 rounded
               />
             </li>

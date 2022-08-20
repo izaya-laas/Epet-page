@@ -15,6 +15,7 @@ export const useStyles = () => {
         buttonStyles: "bg-primary-color text-fourth-color border-fourth-color",
         linkStyles: "text-blue-300",
         borderStyles: "border-forth-color",
+        skeletonBaseColor: "var(--op-primary-color)",
       });
     } else {
       setDarkStyles({
@@ -25,6 +26,7 @@ export const useStyles = () => {
           "bg-secondary-color text-primary-color border-primary-color",
         linkStyles: "text-blue-600",
         borderStyles: "border-primary-color",
+        skeletonBaseColor: "var(--gray-color)",
       });
     }
   }, [isDark]);

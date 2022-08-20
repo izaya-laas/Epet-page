@@ -18,6 +18,7 @@ module.exports = {
         "third-color": "var(--third-color)",
         "fourth-color": "var(--fourth-color)",
         "op-primary-color": "var(--op-primary-color)",
+        "gray-color": "var(--gray-color)",
       },
     },
   },
