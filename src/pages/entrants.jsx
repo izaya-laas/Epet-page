@@ -12,13 +12,16 @@ const paso2 = "https://i.ibb.co/njrf8B9/ingresantes2022-paso2.webp";
 const paso3 = "https://i.ibb.co/wsn32tw/ingresantes2022-paso3.webp";
 
 const Entrants = () => {
-  const { subtitleStyles, linkStyles, skeletonBaseColor } = useStyles();
+  const { subtitleStyles, linkStyles, borderStyles, skeletonBaseColor } =
+    useStyles();
 
   console.log(skeletonBaseColor);
   return (
     <>
       <Main>
-        <Title className="text-center mb-10 pb-2 border-b-2 border-dotted ">
+        <Title
+          className={`text-center mb-10 pb-2 border-b-2 border-dotted ${borderStyles}`}
+        >
           Inscripciones
         </Title>
         <section className="text-lg text-left desktop:w-3/4 desktop:mx-auto">
