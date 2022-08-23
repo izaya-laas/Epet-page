@@ -16,6 +16,7 @@ export const useStyles = () => {
         linkStyles: "text-blue-300",
         borderStyles: "border-forth-color",
         skeletonBaseColor: "var(--op-primary-color)",
+        courseCardStyles: "bg-fourth-color text-primary-color",
       });
     } else {
       setDarkStyles({
@@ -27,6 +28,7 @@ export const useStyles = () => {
         linkStyles: "text-blue-600",
         borderStyles: "border-primary-color",
         skeletonBaseColor: "var(--gray-color)",
+        courseCardStyles: "bg-primary-color text-fourth-color",
       });
     }
   }, [isDark]);
