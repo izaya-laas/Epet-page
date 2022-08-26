@@ -1,11 +1,12 @@
 import React from "react";
-import imageSrc from "../404-image.svg";
+import Image404 from "../components/Image404";
+import Main from "../components/Main";
 
 const Error404 = () => {
   return (
-    <div className="flex items-center justify-center ">
-      <img src={imageSrc} alt="image error 404" />
-    </div>
+    <Main className="flex justify-start items-center mt-4">
+      <Image404 />
+    </Main>
   );
 };
 

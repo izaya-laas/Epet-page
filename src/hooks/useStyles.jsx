@@ -17,6 +17,8 @@ export const useStyles = () => {
         borderStyles: "border-forth-color",
         skeletonBaseColor: "var(--op-primary-color)",
         courseCardStyles: "bg-fourth-color text-primary-color",
+        primarySvgColor: "var(--secondary-color)",
+        secondarySvgColor: "var(--primary-color)",
       });
     } else {
       setDarkStyles({
@@ -29,6 +31,8 @@ export const useStyles = () => {
         borderStyles: "border-primary-color",
         skeletonBaseColor: "var(--gray-color)",
         courseCardStyles: "bg-primary-color text-fourth-color",
+        primarySvgColor: "var(--primary-color)",
+        secondarySvgColor: "var(--secondary-color)",
       });
     }
   }, [isDark]);

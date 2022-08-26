@@ -5,6 +5,7 @@ import Error404 from "../pages/Error-404";
 import Home from "../pages/home";
 import Courses from "../pages/courses";
 import Entrants from "../pages/entrants";
+import UnderWorking from "../pages/UnderWorking";
 
 const Router = () => {
   return (
@@ -12,7 +13,7 @@ const Router = () => {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
-          <Route path="noticias" element={<NewsPage />} />
+          <Route path="noticias" element={<UnderWorking />} />
           <Route path="ingresantes" element={<Entrants />} />
           <Route path="cursos">
             <Route index element={<Courses />} />
