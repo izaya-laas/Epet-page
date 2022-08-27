@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import NavLink from "./NavLink";
 import mobileContext from "../../context/mobileContext";
 
 const NavButton = ({ setOpenHamburger, setIsOpenSubMenu, to, text }) => {
@@ -12,7 +12,7 @@ const NavButton = ({ setOpenHamburger, setIsOpenSubMenu, to, text }) => {
         setIsOpenSubMenu(false);
       }}
     >
-      <NavLink className={"font-bold text-white text-xl "} to={to}>
+      <NavLink className={"font-bold text-xl "} to={to}>
         {text}
       </NavLink>
     </button>

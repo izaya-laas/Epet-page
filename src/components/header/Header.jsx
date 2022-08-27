@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 left-0 w-full flex justify-between items-center h-12 px-4 z-20 bg-primary-color text-secondary-color`}
+      className={`sticky top-0 left-0 w-full flex justify-between items-center h-12 tablet:h-14 px-4 z-20 bg-primary-color text-secondary-color`}
     >
       <div
         className={`flex items-center w-full justify-between ${
