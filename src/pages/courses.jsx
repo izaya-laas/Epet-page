@@ -5,46 +5,11 @@ import Main from "../components/Main";
 import { Link } from "react-router-dom";
 import { useStyles } from "../hooks/useStyles";
 
-const COURSES = [
-  {
-    year: "1er año",
-    index: 1,
-    text: "Objetivo: introducir a los nuevos alumnos a la nueva vida escolar, formar la curiosidad",
-  },
-  {
-    year: "2do año",
-    index: 2,
-    text: "Objetivo: Aprender electricidad junto a nuevos valores escolares ",
-  },
-  {
-    year: "3er año",
-    index: 3,
-    text: "Creacion de proyecto con logica de rele y temporizadores",
-  },
-  {
-    year: "4to año",
-    index: 4,
-    text: "Mejora en las matematicas del alumno y logica a la hora de resolver un problema matematico sabiendo donde lo aplicara",
-  },
-  {
-    year: "5to año",
-    index: 5,
-    text: "Creacion de proyectos escolares basados en la electricidad y logica de rele",
-  },
-  { year: "6to año", index: 6, text: "Atomatizaciones industriales junto a " },
-  {
-    year: "7mo año",
-    index: 7,
-    text: "Realizar trabajos reales para formar mas al alumno y llevarlo a problematicas del mundo real",
-  },
-];
+import COURSES from "../db/courses-data.json";
 
 const Courses = () => {
   const [CurrentAvanico, setCurrentAvanico] = useState(0);
-  const { borderStyles, buttonStyles, courseCardStyles, linkStyles } =
-    useStyles();
-
-  console.log(CurrentAvanico);
+  const { borderStyles, buttonStyles, courseCardStyles } = useStyles();
 
   const eventClick = (e) => {
     if (e.target.matches('div[data-year="1"] *')) return setCurrentAvanico(1);
@@ -59,7 +24,7 @@ const Courses = () => {
   };
 
   return (
-    <div className="w-screen " onClick={eventClick}>
+    <div onClick={eventClick}>
       <Main>
         <Title
           className={`text-center mb-10 pb-2 border-b-2 border-dotted ${borderStyles}`}
