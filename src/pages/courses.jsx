@@ -38,7 +38,7 @@ const Courses = () => {
               <div
                 key={course.index}
                 data-year={course.index}
-                className="mt-4 relative "
+                className="mt-4 overflow-hidden rounded-2xl "
               >
                 <div
                   className={`p-4 rounded-2xl border-b ${buttonStyles} relative z-10`}
@@ -48,10 +48,10 @@ const Courses = () => {
                   </Paragraph>
                 </div>
                 <div
-                  className={` ${courseCardStyles} pt-8 pb-2 px-2 transition-opacity -translate-y-6 duration-1000 rounded-2xl ${
+                  className={` ${courseCardStyles} pt-8 pb-2 px-2 transition-tranform -translate-y-6 duration-500 rounded-2xl   ${
                     course.index === CurrentAvanico
                       ? "visible"
-                      : "invisible opacity-0 absolute"
+                      : "invisible -translate-y-full absolute opacity-50 pt-0"
                   }`}
                 >
                   <p>
