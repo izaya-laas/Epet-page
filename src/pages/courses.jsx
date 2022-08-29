@@ -12,15 +12,27 @@ const Courses = () => {
   const { borderStyles, buttonStyles, courseCardStyles } = useStyles();
 
   const eventClick = (e) => {
-    if (e.target.matches('div[data-year="1"] *')) return setCurrentAvanico(1);
-    if (e.target.matches('div[data-year="2"] *')) return setCurrentAvanico(2);
-    if (e.target.matches('div[data-year="3"] *')) return setCurrentAvanico(3);
-    if (e.target.matches('div[data-year="4"] *')) return setCurrentAvanico(4);
-    if (e.target.matches('div[data-year="5"] *')) return setCurrentAvanico(5);
-    if (e.target.matches('div[data-year="6"] *')) return setCurrentAvanico(6);
-    if (e.target.matches('div[data-year="7"] *')) return setCurrentAvanico(7);
-
-    if (!e.target.matches("div[data-year] *")) return setCurrentAvanico(0);
+    if (e.target.matches('div[data-year="1"] *')) {
+      return CurrentAvanico === 1 ? setCurrentAvanico(0) : setCurrentAvanico(1);
+    }
+    if (e.target.matches('div[data-year="2"] *')) {
+      return CurrentAvanico === 2 ? setCurrentAvanico(0) : setCurrentAvanico(2);
+    }
+    if (e.target.matches('div[data-year="3"] *')) {
+      return CurrentAvanico === 3 ? setCurrentAvanico(0) : setCurrentAvanico(3);
+    }
+    if (e.target.matches('div[data-year="4"] *')) {
+      return CurrentAvanico === 4 ? setCurrentAvanico(0) : setCurrentAvanico(4);
+    }
+    if (e.target.matches('div[data-year="5"] *')) {
+      return CurrentAvanico === 5 ? setCurrentAvanico(0) : setCurrentAvanico(5);
+    }
+    if (e.target.matches('div[data-year="6"] *')) {
+      return CurrentAvanico === 6 ? setCurrentAvanico(0) : setCurrentAvanico(6);
+    }
+    if (e.target.matches('div[data-year="7"] *')) {
+      return CurrentAvanico === 7 ? setCurrentAvanico(0) : setCurrentAvanico(7);
+    }
   };
 
   return (
