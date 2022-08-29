@@ -1,5 +1,4 @@
 import NavButton from "./NavButton";
-import NavMenu from "./NavMenu";
 import Logo from "../Logo";
 import DarkMode from "./DarkMode";
 import AuthMenu from "./AuthMenu";
@@ -19,9 +18,7 @@ const NavBar = ({
 
   return (
     <nav className={className}>
-      <Logo
-        setIsOpenHamburger={setIsOpenHamburger}
-      />
+      <Logo setIsOpenHamburger={setIsOpenHamburger} />
       <section className={sectionClass}>
         <NavButton
           setOpenHamburger={setOpenHamburger}

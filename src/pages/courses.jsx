@@ -47,11 +47,12 @@ const Courses = () => {
                     {course.year}
                   </Paragraph>
                 </div>
+
                 <div
                   className={` ${courseCardStyles} pt-8 pb-2 px-2 transition-tranform -translate-y-6 duration-700 rounded-2xl ${
                     course.index === CurrentAvanico
                       ? "visible"
-                      : "invisible -translate-y-full absolute opacity-50 pt-0 w-3/4"
+                      : "invisible -translate-y-full absolute opacity-50 pt-0 scale-y-[10%] w-[calc(100%-32px)] tablet:w-full desktop:w-3/4"
                   }`}
                 >
                   <p>

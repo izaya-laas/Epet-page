@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import mobileContext from "../context/mobileContext";
 
-const Logo = ({ setIsOpenHamburger, setIsOpenSubMenu }) => {
+const Logo = ({ setIsOpenHamburger }) => {
   const [isMobile] = useContext(mobileContext);
   return (
     <Link
@@ -10,7 +10,6 @@ const Logo = ({ setIsOpenHamburger, setIsOpenSubMenu }) => {
       to="/"
       onClick={() => {
         if (isMobile) setIsOpenHamburger(true);
-        setIsOpenSubMenu(false);
       }}
     >
       <strong className="text-xl">EPET N°6</strong>

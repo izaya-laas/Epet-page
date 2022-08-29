@@ -15,7 +15,6 @@ const Entrants = () => {
   const { subtitleStyles, linkStyles, borderStyles, skeletonBaseColor } =
     useStyles();
 
-  console.log(skeletonBaseColor);
   return (
     <>
       <Main>
