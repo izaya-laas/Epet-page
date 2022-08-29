@@ -9,8 +9,6 @@ import AuthContext from "../../context/AuthContext";
 
 const NavBar = ({
   className,
-  isOpenSubMenu,
-  setIsOpenSubMenu,
   isOpenUserMenu,
   setIsOpenUserMenu,
   sectionClass,
@@ -23,32 +21,28 @@ const NavBar = ({
     <nav className={className}>
       <Logo
         setIsOpenHamburger={setIsOpenHamburger}
-        setIsOpenSubMenu={setIsOpenSubMenu}
       />
       <section className={sectionClass}>
         <NavButton
           setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          to="/noticias"
-          text="Noticias"
+          to="/escuela"
+          text="Nuestra Escuela"
         />
         <NavButton
           setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
           to="/cursos"
           text="Alumnos"
         />
         <NavButton
           setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
           to="/ingresantes"
           text="Ingresantes"
         />
-        <NavMenu
+
+        <NavButton
           setOpenHamburger={setOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
-          isOpenSubMenu={isOpenSubMenu}
-          setIsOpenUserMenu={setIsOpenUserMenu}
+          to="/noticias"
+          text="Noticias"
         />
       </section>
       <div className="flex items-center">
@@ -57,7 +51,6 @@ const NavBar = ({
           setIsOpenUserMenu={setIsOpenUserMenu}
           isOpenUserMenu={isOpenUserMenu}
           setIsOpenHamburger={setIsOpenHamburger}
-          setIsOpenSubMenu={setIsOpenSubMenu}
           user={user}
         />
       </div>

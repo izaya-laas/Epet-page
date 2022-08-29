@@ -5,7 +5,6 @@ import mobileContext from "../../context/mobileContext";
 const User = ({
   setIsOpenUserMenu,
   isOpenUserMenu,
-  setIsOpenSubMenu,
   setIsOpenHamburger,
   user,
 }) => {
@@ -16,7 +15,6 @@ const User = ({
 
   const handleUserMenu = () => {
     setIsOpenUserMenu(!isOpenUserMenu);
-    setIsOpenSubMenu(false);
     if (isMobile) setIsOpenHamburger(true);
   };
 

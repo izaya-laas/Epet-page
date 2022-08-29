@@ -48,10 +48,10 @@ const Courses = () => {
                   </Paragraph>
                 </div>
                 <div
-                  className={` ${courseCardStyles} pt-8 pb-2 px-2 transition-tranform -translate-y-6 duration-500 rounded-2xl   ${
+                  className={` ${courseCardStyles} pt-8 pb-2 px-2 transition-tranform -translate-y-6 duration-700 rounded-2xl ${
                     course.index === CurrentAvanico
                       ? "visible"
-                      : "invisible -translate-y-full absolute opacity-50 pt-0"
+                      : "invisible -translate-y-full absolute opacity-50 pt-0 w-3/4"
                   }`}
                 >
                   <p>

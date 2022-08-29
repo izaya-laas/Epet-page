@@ -6,7 +6,6 @@ import NavBar from "./NavBar";
 
 const Header = () => {
   let [isMobile] = useContext(mobileContext);
-  const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
   const [isOpenUserMenu, setIsOpenUserMenu] = useState(false);
 
   return (
@@ -22,8 +21,6 @@ const Header = () => {
           <MobileNavbar setIsOpenUserMenu={setIsOpenUserMenu}>
             <NavBar
               className={"flex w-full justify-between items-center mr-8"}
-              isOpenSubMenu={isOpenSubMenu}
-              setIsOpenSubMenu={setIsOpenSubMenu}
               isOpenUserMenu={isOpenUserMenu}
             />
           </MobileNavbar>
@@ -31,8 +28,6 @@ const Header = () => {
           <DesktopNavbar>
             <NavBar
               className="flex justify-between w-full"
-              isOpenSubMenu={isOpenSubMenu}
-              setIsOpenSubMenu={setIsOpenSubMenu}
               isOpenUserMenu={isOpenUserMenu}
               setIsOpenUserMenu={setIsOpenUserMenu}
               sectionClass={"flex items-center justify-center gap-4"}
