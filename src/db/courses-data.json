@@ -2,36 +2,302 @@
   {
     "year": "1er año",
     "index": 1,
-    "text": "Adaptacion a vida escolar en secundaria, Introduccion a carpinteria y hojalateria"
+    "text": "Adaptacion a vida escolar en secundaria, Introduccion a carpinteria y hojalateria",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "2do año",
     "index": 2,
-    "text": "Introduccion a electricidad, herreria y torneria "
+    "text": "Introduccion a electricidad, herreria y torneria ",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "3er año",
     "index": 3,
-    "text": "Profundizacion en logica de rele, herreria y torneria. Introduccion a arduino, Introduccion a dibujo tecnico"
+    "text": "Profundizacion en logica de rele, herreria y torneria. Introduccion a arduino, Introduccion a dibujo tecnico",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "4to año",
     "index": 4,
-    "text": "Introduccion a Autocad, Trabajos de herreria y torneria"
+    "text": "Introduccion a Autocad, Trabajos de herreria y torneria",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "5to año",
     "index": 5,
-    "text": "Introduccion a composicion de materiales, fundicion, Diseño 3D con solidWorks"
+    "text": "Introduccion a composicion de materiales, fundicion, Diseño 3D con solidWorks",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "6to año",
     "index": 6,
-    "text": "Introduccion a Atomatizaciones industriales con neumatica y hidraulica"
+    "text": "Introduccion a Atomatizaciones industriales con neumatica y hidraulica",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   },
   {
     "year": "7mo año",
     "index": 7,
-    "text": "Electricad domiciliaria, creacion de planos, Energia renovable, PLC, Resolucion de problemas"
+    "text": "Electricidad domiciliaria, creacion de planos, Energia renovable, PLC, Resolucion de problemas",
+    "coursePage": {
+      "title": "Tercer Año",
+      "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget quam leo. Aliquam erat volutpat. Suspendisse at dui in enim tempor tincidunt. Maecenas tempor arcu libero. Integer a purus libero. Fusce consequat erat eros, vel ultricies leo ornare non. Duis condimentum feugiat felis sed finibus. Nullam nunc nisi.",
+      "images": [
+        {
+          "image": "https://placeimg.com/800/800/nature",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/animals",
+          "alt": "imagen-epet"
+        },
+        {
+          "image": "https://placeimg.com/800/800/architecture",
+          "alt": "imagen-epet"
+        },
+        { "image": "https://placeimg.com/800/800/tech", "alt": "imagen-epet" }
+      ],
+      "subjects": [
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Matematica", "professor": "Lautaro Asat" },
+        {
+          "topic": "taller de instalacines electricas",
+          "professor": "Lautaro Asat"
+        },
+        { "topic": "historia", "professor": "Lautaro Asat" },
+        { "topic": "quimica y fisica", "professor": "Lautaro Asat" },
+        { "topic": "xd", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" },
+        { "topic": "Lengua y literatura", "professor": "Lautaro Asat" }
+      ]
+    }
   }
 ]
