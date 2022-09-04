@@ -42,7 +42,7 @@ const NavBar = ({
           text="Noticias"
         />
       </section>
-      <div className="flex items-center">
+      <div className="flex items-center -translate-x items">
         <DarkMode />
         <User
           setIsOpenUserMenu={setIsOpenUserMenu}

@@ -1,15 +1,17 @@
+import { Component } from "react";
 import { useEffect, useState } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const Carrousel = ({ images, className }) => {
   const [currentPosition, setCurrentPosition] = useState(0);
-  const [currentImage, setCurrentImage] = useState(images[currentPosition]);
+
+  let currentImage = images[currentPosition];
   const { image, alt, description, title } = currentImage;
   const limit = images.length - 1;
 
   useEffect(() => {
-    setCurrentImage(images[currentPosition]);
+    currentImage = images[currentPosition];
 
     const follower = setInterval(() => {
       nextImage();
