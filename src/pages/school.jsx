@@ -18,23 +18,35 @@ const School = () => {
         pariatur illum, exercitationem mollitia eveniet facere, consequuntur
         distinctio labore nihil natus cumque in expedita culpa!
       </Paragraph>
+      <div className="grid tablet:grid-cols-2 tablet:gap-x-6">
+        <section className="my-6">
+          <Subtitle>Mision & Valores</Subtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            consectetur tenetur cupiditate culpa omnis dolorum saepe recusandae,
+            incidunt, a obcaecati ut. Non error a odit cumque praesentium
+            accusantium, id sit?
+          </Paragraph>
+        </section>
+        <section className="my-6">
+          <Subtitle>Historia</Subtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            consectetur tenetur cupiditate culpa omnis dolorum saepe recusandae,
+            incidunt, a obcaecati ut. Non error a odit cumque praesentium
+            accusantium, id sit?
+          </Paragraph>
+        </section>
+      </div>
       <section className="my-6">
-        <Subtitle>Mision & Valores</Subtitle>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          consectetur tenetur cupiditate culpa omnis dolorum saepe recusandae,
-          incidunt, a obcaecati ut. Non error a odit cumque praesentium
-          accusantium, id sit?
-        </Paragraph>
-      </section>
-      <section className="my-6">
-        <Subtitle>Historia</Subtitle>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          consectetur tenetur cupiditate culpa omnis dolorum saepe recusandae,
-          incidunt, a obcaecati ut. Non error a odit cumque praesentium
-          accusantium, id sit?
-        </Paragraph>
+        <Subtitle>Premios que hemos ganado</Subtitle>
+        <ul className="leading-8">
+          <li>Premio mejor escuela 2022</li>
+          <li>Premio de creacion industrial</li>
+          <li>Premio de la mejora hidraulica 2014</li>
+          <li>Premio impresion 3D 2018</li>
+          <li>Premio michigan 2004</li>
+        </ul>
       </section>
     </Main>
   );
