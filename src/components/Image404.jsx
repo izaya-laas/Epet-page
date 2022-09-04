@@ -9,7 +9,7 @@ const Image404 = () => {
       viewBox="0 0 861 572"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full max-h-[30rem]"
+      className="w-full max-h-[30rem] mt-4 mb-16 tablet:mb-52"
     >
       <g clipPath="url(#clip0_1_107)">
         <path

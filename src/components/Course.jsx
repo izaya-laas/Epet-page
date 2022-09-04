@@ -59,7 +59,7 @@ const Course = () => {
                   <th className="border border-black min-w-[150px] tablet:min-w-[250px]">
                     Materias
                   </th>
-                  <th className="min-w-[250px] tablet:min-w-[250px]">
+                  <th className="min-w-[150px] tablet:min-w-[250px]">
                     Profesor
                   </th>
                 </tr>
