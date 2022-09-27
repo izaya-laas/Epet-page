@@ -1,17 +1,17 @@
 [
   {
-    "image": "./src/assets/desafio-eco.jpg",
+    "image": "https://i.ibb.co/K0WxQZ2/desafio-eco.jpg",
     "alt": "desafio eco imagen",
     "description": "Alumnos crean una wea que sirve ecologicamente",
     "title": "desafio-eco"
   },
   {
-    "image": "./src/assets/proyecto-insur.jpg",
+    "image": "https://i.ibb.co/4MMBCwH/proyecto-insur.jpg",
     "alt": "Proyecto insur imagen",
     "description": "Alumnos de 6to año participan en un proyecto de plastico"
   },
   {
-    "image": "./src/assets/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
+    "image": "https://i.ibb.co/jDz5JFG/reconocimiento-inet-transportador-para-personas-no-videntes.jpg",
     "alt": "reconocimiento inet transportador para personas no videntes imagen"
   }
 ]
